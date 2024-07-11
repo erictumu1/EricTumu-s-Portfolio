@@ -6,6 +6,16 @@
   text-decoration: none;
   list-style: none;
 }
+.navbaritems {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: auto;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  z-index: 2;
+}
 .header {
   position: fixed;
   top: 0;
@@ -525,4 +535,37 @@ section.projects {
 }
 #contain article:hover span {
   color: orangered;
+}
+@keyframes fadeInOne {
+  from {
+    opacity: 0;
+    color: black;
+  }
+  to {
+    opacity: 1;
+    color: rgb(255, 116, 3);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+.fadein {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.fadein.visible {
+  opacity: 1;
 }
