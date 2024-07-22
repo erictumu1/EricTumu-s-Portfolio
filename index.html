@@ -15,9 +15,9 @@
       <a href="#" class="logo"><span>Eric</span>Tumu</a>
 
       <nav class="navbar" id="desktop-nav">
-        <a href="#">Introduction</a>
+        <a href="#home" class="">Introduction</a>
         <a href="#about">About me</a>
-        <a href="#comehere">Experiences</a>
+        <a href="#experience">Experiences</a>
         <a href="#projects">Projects</a>
       </nav>
 
@@ -33,10 +33,10 @@
             <span></span>
           </div>
           <div class="menu-links">
-            <li><a href="#" onclick="togglemenu()">Introduction</a></li>
+            <li><a href="#home" onclick="togglemenu()">Introduction</a></li>
             <li><a href="#about" onclick="togglemenu()">About me</a></li>
             <li>
-              <a href="#comehere" onclick="togglemenu()">Experiences</a>
+              <a href="#experience" onclick="togglemenu()">Experiences</a>
             </li>
             <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
             <li>
@@ -55,7 +55,7 @@
         </h1>
         <br><br><br>
         <div class="btn-box">
-          <button class="btn-1" onclick="window.open('EricsResume.pdf')">
+          <button class="btn-1" onclick="window.open('./assets/EricsResume.pdf')">
             My Resume
           </button>
           <button class="btn-2" onclick="location.href='#comehere'">
@@ -65,12 +65,12 @@
       </div>
       <br><br>
       <div class="img-box fadein">
-        <img src="erictumu.jpg" alt="" />
+        <img src="./assets/erictumu.jpg" alt="" />
       </div>
     </section>
     <section class="about" id="about">
       <div class="about-img fadein">
-        <img src="erictumu1.jpg" alt="" />
+        <img src="./assets/erictumu1.jpg" alt="" />
       </div>
       <div class="about-content">
         <h2 class="heading fadein">About <span>Me</span></h2>
@@ -99,7 +99,7 @@
         <a href="#projects" class="btn-2">My Projects</a>
       </div>
     </section>
-    <section class="comehere" id="comehere"></section>
+    <section class="comehere" id="experience"></section>
     <section class="experience" id="experience">
       <p class="section_text_p1">Explore My</p>
       <h2 class="contact-me"><span class="fadein">Experiences</span></h2>
@@ -227,6 +227,27 @@
         <h3 class="fadein">My <span>Projects</span></h3>
         <br /><br />
         <div class="article-container" id="contain">
+          <article>
+            <p class="in-progress">In Progress</p>
+            <img src="./assets/TuMunch.png" alt="" class="icon fadein" id="thisicon"/>
+            <br><br><br>
+          <h4 class="project-sub-title">TuMunch</h4>
+          <p class="projectdesc fadein">TuMunch is a food delivery website showcasing various ready to eat food items available for Purchase.<br><br>This is a full stack website built using React JS along side other various technologies such as Express, MongoDB, Node JS and Stripe.<br><br> TuMunch features a customer page which enables them to place orders which are then added to the cart and later on checked out. TuMunch also features a restaurant page which displays the items being ordered, includes a payment method for the customer. Among other features available on the site.</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color project-btn fadein"
+              onclick="window.open('https://github.com/erictumu1/TuMunch.git', '_blank')"
+            >
+              GitHub
+            </button>
+            <br><br>
+            <button
+            class="btn btn-color project-btn fadein"
+            onclick="window.open('https://drive.google.com/file/d/1-uAaD_eS9pJyqF_S42k0-eNamqrFBNe7/view?usp=sharing', '_blank')"
+          >
+            Link to Website
+          </button>
+          </article>
           <article>
             <p class="complete">Complete</p>
             <img src="./assets/echolyf1.png" alt="" class="icon fadein" id="thisicon"/>

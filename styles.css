@@ -6,6 +6,9 @@
   text-decoration: none;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 .navbaritems {
   position: fixed;
   top: 0px;
@@ -16,6 +19,17 @@
   background-color: rgb(0, 0, 0);
   z-index: 2;
 }
+/* styles.css */
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a.active {
+  color: orangered; /* Change this to the highlight color you want */
+  font-weight: bold;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -56,7 +70,6 @@ span {
 }
 .navbar a:hover {
   color: orangered;
-  border-bottom: 3px solid orangered;
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
@@ -514,7 +527,8 @@ section.projects {
 #contain article p.projectdesc {
   color: white;
 }
-#contain article p.complete {
+#contain article p.complete,
+#contain article p.in-progress {
   color: orangered;
   font-weight: bold;
   text-align: left;
@@ -524,6 +538,9 @@ section.projects {
 }
 #contain article:hover p.complete {
   color: green;
+}
+#contain article:hover p.in-progress {
+  color: red;
 }
 .organise {
   display: flex;

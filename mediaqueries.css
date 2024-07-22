@@ -439,6 +439,12 @@
   .footer {
     width: 106%;
   }
+  #contain article p.complete,
+  #contain article p.in-progress {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+  }
 }
 @media screen and (min-width: 200px) and (max-width: 932px) {
   #hamburger-nav {
@@ -544,5 +550,11 @@
   }
   .home h1 span {
     font-size: 28px;
+  }
+  #contain article p.complete,
+  #contain article p.in-progress {
+    color: white;
+    font-weight: bold;
+    text-align: left;
   }
 }
