@@ -531,6 +531,7 @@ section.projects {
   color: orangered;
   font-weight: bold;
   text-align: left;
+  text-decoration: underline;
 }
 #contain article:hover p.projectdesc {
   color: black;
