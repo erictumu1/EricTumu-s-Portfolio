@@ -19,14 +19,13 @@ html {
   background-color: rgb(0, 0, 0);
   z-index: 2;
 }
-/* styles.css */
 .navbar a {
   text-decoration: none;
   color: black;
 }
 
 .navbar a.active {
-  color: orangered; /* Change this to the highlight color you want */
+  color: orangered;
   font-weight: bold;
 }
 
