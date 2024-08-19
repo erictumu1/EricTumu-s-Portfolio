@@ -68,5 +68,27 @@ document.addEventListener("DOMContentLoaded", function() {
         appearOnScroll.observe(fader);
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const projectLinks = document.querySelectorAll('.article-container article a');
+    const projects = document.querySelectorAll('.article-container article');
+
+    projectLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            projects.forEach(project => project.classList.remove('highlight'));
+
+            const targetProjectId = this.getAttribute('href').substring(1);
+            const targetProject = document.getElementById(targetProjectId);
+            
+            if (targetProject) {
+                targetProject.classList.add('highlight');
+                targetProject.scrollIntoView({ behavior: 'smooth' });
+
+                                setTimeout(() => {
+                    targetProject.classList.remove('highlight');
+                }, 10000); 
+        }});
+    });
+});
 
   

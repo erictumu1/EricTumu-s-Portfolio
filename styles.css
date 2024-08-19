@@ -586,3 +586,11 @@ section.projects {
 .fadein.visible {
   opacity: 1;
 }
+.highlight {
+  border: 2px solid white;
+  box-shadow: 0 0 3000px white;
+  color: white;
+  background-color: black;
+  transition: border 0.5s ease, box-shadow 0.5s ease, color 0.5s ease,
+    background-color 0.5s ease;
+}
