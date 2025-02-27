@@ -56,7 +56,7 @@ html {
   text-shadow: 0 0 25px orangered, 0 0 50px orangered;
   transform: scale(1.1);
 }
-span {
+span:not(#year) {
   color: orangered;
 }
 .navbar a {
