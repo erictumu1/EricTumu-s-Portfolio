@@ -1,3 +1,4 @@
+/* Original color orangered */
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +26,7 @@ html {
 }
 
 .navbar a.active {
-  color: orangered;
+  color: #00838f;
   font-weight: bold;
 }
 
@@ -52,12 +53,12 @@ html {
   font-weight: bold;
 }
 .logo:hover {
-  color: orangered;
-  text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+  color: #00838f;
+  text-shadow: 0 0 25px #00838f, 0 0 50px #00838f;
   transform: scale(1.1);
 }
 span:not(#year) {
-  color: orangered;
+  color: #00838f;
 }
 .navbar a {
   font-size: 18px;
@@ -68,7 +69,7 @@ span:not(#year) {
   transition: 0.3s ease;
 }
 .navbar a:hover {
-  color: orangered;
+  color: #00838f;
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
@@ -84,8 +85,8 @@ span:not(#year) {
   transition: 0.3s ease;
 }
 .contact:hover {
-  background-color: orangered;
-  box-shadow: 0 0 25px orangered;
+  background-color: #00838f;
+  box-shadow: 0 0 25px #00838f;
   color: white;
 }
 .home {
@@ -134,7 +135,7 @@ span:not(#year) {
 }
 .btn-2 {
   padding: 15px 28px;
-  background-color: orangered;
+  background-color: #00838f;
   color: white;
   border: 2px solid black;
   border-radius: 8px;
@@ -146,7 +147,7 @@ span:not(#year) {
 }
 .btn-2:hover {
   background-color: white;
-  color: orangered;
+  color: #00838f;
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
@@ -155,7 +156,7 @@ span:not(#year) {
   width: 450px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: orangered;
+  background-color: #00838f;
 }
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.6);
@@ -172,7 +173,7 @@ span:not(#year) {
 .about-img img {
   position: relative;
   width: 450px;
-  box-shadow: 0 0 25px orangered, 0 0 25px orangered;
+  box-shadow: 0 0 25px #00838f, 0 0 25px #00838f;
   border-radius: 50%;
 }
 .about-content h2 {
@@ -237,7 +238,7 @@ span:not(#year) {
 .footer .social a {
   font-size: 24px;
   color: white;
-  border: 2px solid orangered;
+  border: 2px solid #00838f;
   width: 30px;
   height: 30px;
   line-height: 38px;
@@ -245,13 +246,13 @@ span:not(#year) {
   text-align: center;
   border-radius: 50%;
   margin: 0 8px;
-  box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+  box-shadow: inset 0 0 10px #00838f, 0 0 10px #00838f;
   transition: 0.3s ease;
 }
 .footer .social a:hover {
   transform: scale(1.2) translateY(-10px);
-  color: orangered;
-  border: 2px solid orangered;
+  color: #00838f;
+  border: 2px solid #00838f;
 }
 .footer ul {
   margin-top: 0;
@@ -267,7 +268,7 @@ span:not(#year) {
   transition: 0.3s ease;
 }
 .footer ul li a:hover {
-  border-bottom: 3px solid orangered;
+  border-bottom: 3px solid #00838f;
 }
 .footer ul li {
   display: inline-block;
@@ -297,7 +298,7 @@ span:not(#year) {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: orangered;
+  background-color: #00838f;
   transition: all 0.3s ease-in-out;
 }
 .menu-links {
@@ -390,15 +391,15 @@ h4 {
 .details-container div:hover {
   background-color: white;
   transform: scale(1.05);
-  border-color: orangered;
-  color: orangered;
+  border-color: #00838f;
+  color: #00838f;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .details-container div:hover a,
 .details-container div:hover h4,
 .details-container div:hover p {
-  color: orangered;
+  color: #00838f;
 }
 section.navbaritems {
   background-color: black;
@@ -438,7 +439,7 @@ section.experience {
   border-radius: 20px;
   padding: 20px;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  background-color: orangered;
+  background-color: #00838f;
   text-align: center;
 }
 #contain article h4 {
@@ -447,7 +448,7 @@ section.experience {
   transition: color 0.3s ease;
 }
 #contain article:hover h4 {
-  color: orangered;
+  color: #00838f;
 }
 #contain article:hover {
   transform: scale(1.05);
@@ -456,7 +457,7 @@ section.experience {
 }
 .article-container article:hover {
   transform: scale(1.05);
-  background-color: orangered;
+  background-color: #00838f;
   color: black;
 }
 .project-sub-title {
@@ -485,7 +486,7 @@ section.projects {
 .btn-color {
   padding: 15px 28px;
   background-color: white;
-  color: orangered;
+  color: #00838f;
   border: 2px solid black;
   border-radius: 8px;
   font-size: 18px;
@@ -496,14 +497,14 @@ section.projects {
 }
 
 .btn-color:hover {
-  background-color: orangered;
+  background-color: #00838f;
   color: white;
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 .progress {
   font-size: 40px;
-  color: green;
+  color: #00838f;
   position: fixed;
   margin-left: 50px;
   margin-top: 130px;
@@ -528,7 +529,7 @@ section.projects {
 }
 #contain article p.complete,
 #contain article p.in-progress {
-  color: orangered;
+  color: #00838f;
   font-weight: bold;
   text-align: left;
   text-decoration: underline;
@@ -537,7 +538,7 @@ section.projects {
   color: black;
 }
 #contain article:hover p.complete {
-  color: green;
+  color: #00838f;
 }
 #contain article:hover p.in-progress {
   color: red;
@@ -551,7 +552,7 @@ section.projects {
   color: white;
 }
 #contain article:hover span {
-  color: orangered;
+  color: #00838f;
 }
 @keyframes fadeInOne {
   from {
