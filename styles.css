@@ -178,16 +178,16 @@ span:not(#year) {
 }
 .about-content h2 {
   text-align: left;
-  color: #999999;
+  color: #f5f5f5;
   font-size: 42px;
 }
 .about-content h3 {
-  color: #999999;
+  color: #f5f5f5;
   font-size: 62px;
 }
 .about-content h2 {
   text-align: left;
-  color: #999999;
+  color: #f5f5f5;
   font-size: 42px;
 }
 .about-content p {
@@ -538,7 +538,8 @@ section.projects {
   color: black;
 }
 #contain article:hover p.complete {
-  color: #00838f;
+  color: green;
+  text-decoration: none;
 }
 #contain article:hover p.in-progress {
   color: red;

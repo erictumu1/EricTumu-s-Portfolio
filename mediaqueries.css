@@ -123,16 +123,16 @@
   }
   .about-content h2 {
     text-align: left;
-    color: #999999;
+    color: #f5f5f5;
     font-size: 22px;
   }
   .about-content h3 {
-    color: #999999;
+    color: #f5f5f5;
     font-size: 44px;
   }
   .about-content h2 {
     text-align: left;
-    color: #999999;
+    color: #f5f5f5;
     font-size: 22px;
   }
   .about-content p {
@@ -352,7 +352,7 @@
     font-size: 18px;
   }
   .about-content p {
-    color: white;
+    color: #999999;
     font-size: 12px;
     margin: 2em 0 3em;
   }
