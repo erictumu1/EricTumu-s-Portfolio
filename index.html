@@ -32,17 +32,15 @@
             <span></span>
             <span></span>
           </div>
-          <div class="menu-links">
-            <li><a href="#home" onclick="togglemenu()">Introduction</a></li>
-            <li><a href="#about" onclick="togglemenu()">About me</a></li>
-            <li>
-              <a href="#experience" onclick="togglemenu()">Experiences</a>
-            </li>
-            <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
-            <li>
-              <a href="#contact" onclick="togglemenu()">Contact Me</a>
-            </li>
-          </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#home" class="nav-link" onclick="togglemenu()">Introduction</a></li>
+            <li><a href="#about" class="nav-link" onclick="togglemenu()">About me</a></li>
+            <li><a href="#experience" class="nav-link" onclick="togglemenu()">Experiences</a></li>
+            <li><a href="#projects" class="nav-link" onclick="togglemenu()">Projects</a></li>
+            <li><a href="#contact" class="nav-link" onclick="togglemenu()">Contact Me</a></li>
+          </ul>
+        </div>
         </div>
       </nav>
     </section>
@@ -279,7 +277,7 @@
         <div class="article-container" id="contain">
             <article id="time_t">
             <p class="in-progress">In Progress</p>
-            <img src="./assets/TimeT.png" alt="" class="icon fadein" id="thisicon"/>
+            <img src="./assets/TimeT.png" alt="" class="projects" id="thisicon"/>
             <br><br><br>
           <h4 class="project-sub-title">Time T</h4>
           <p class="projectdesc fadein" id="pdesc">Time T is a full stack AI Trip planner that generates personalized trip advice for any destination worldwide with the provided criteria(Budget, number of days of travel, number of people) etc.<br><br>This full stack app is being built using React JS, MongoDB, TailwindCSS, shadcn/ui, Firebase, and the Google Gemini AI.<br><br> Time T features various features such as Google place autocomplete, intelligent place filtering according to budget, a log of previous destination searches among many other features available on the App.</p>
@@ -301,7 +299,7 @@
           </article>
           <article id="tumunch">
             <p class="complete">Complete</p>
-            <img src="./assets/TuMunch.png" alt="" class="icon fadein" id="thisicon"/>
+            <img src="./assets/TuMunch.png" alt="" class="projects" id="thisicon"/>
             <br><br><br>
           <h4 class="project-sub-title">TuMunch</h4>
           <p class="projectdesc fadein" id="pdesc">TuMunch is a full stack food delivery app showcasing various ready to eat food items available for ordering.<br><br>This full stack app was built using React JS along side other various technologies such as Express, MongoDB, Node JS and Stripe.<br><br> TuMunch features a customer page which enables them to place orders which are then added to the cart and later on checked out. TuMunch also features a restaurant page which displays the items being ordered, includes a payment method for the customer. Among other features available on the site.</p>
@@ -322,7 +320,7 @@
           </article>
           <article id="bayshore">
             <p class="complete">Complete</p>
-            <img src="./assets/BayshoreLibrary.png" alt="" class="icon fadein" id="thisicon"/>
+            <img src="./assets/BayshoreLibrary.png" alt="" class="projects" id="thisicon"/>
             <br><br><br>
           <h4 class="project-sub-title">Library Management System</h4>
           <p class="projectdesc fadein" id="pdesc">Bayshore Library is a comprehensive library management application built with various technologies for a smoothe user experience as well as an efficient and secure backend.<br><br> This app allows a librarian to create, update and delete files from the Library system and also allows the library users to only view the book content therefore implementing all the CRUD operations. <br><br>This app features a font end developed using Flutter and Dart and a back end developed using Node JS and typescript as well as express for server side handling and MongoDB for the database.</p>
@@ -343,7 +341,7 @@
           </article>
           <article id="echolyf">
             <p class="complete">Complete</p>
-            <img src="./assets/echolyf1.png" alt="" class="icon fadein" id="thisicon"/>
+            <img src="./assets/echolyf1.png" alt="" class="projects" id="thisicon"/>
             <br><br><br>
           <h4 class="project-sub-title">EchoLyf Music App</h4>
           <p class="projectdesc fadein">Echolyf is a music app that is built using Flutter and Dart. <br><br>This music app is bundled with various API's to provide a few music tracks, access an up to date billboard as well as to also provide up to date news on it's home screen. <br><br> This was my first solo project and this is version one(V1) which is both compatible on IOS and Android.</p>
@@ -365,7 +363,7 @@
         </article>
         <article id="inventory-app">
           <p class="complete">Complete</p>
-          <img src="./assets/inventory_management.png" alt="" class="icon fadein" id="thisicon"/>
+          <img src="./assets/inventory_management.png" alt="" class="projects" id="thisicon"/>
           <br><br><br>
         <h4 class="project-sub-title">Simple Inventory Management App</h4>
         <p class="projectdesc fadein">This is a simple Inventory management Website.<br><br>It performs all CRUD operations in that it allows a user to create a field in the database, view the various fields, modify any attributes of the fields as well as delete any entry. <br><br> This system has been built using Django. It uses python, SQLlite3, and Django's inbuilt classes for the back end as well as HTML and CSS for the front end. It also features styles and javascript code from bootstrap and jQuery.</p>
@@ -386,7 +384,7 @@
         </article>
         <article id="flightsimulator">
           <p class="complete">Complete</p>
-          <img src="./assets/fighterjet.png" alt="" class="icon fadein" />
+          <img src="./assets/fighterjet.png" alt="" class="projects" />
           <br><br><br>
         <h4 class="project-sub-title">Flight Simulator</h4>
         <br>

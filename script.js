@@ -91,4 +91,86 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+ //Script to make the page automatically go the top when a user refreshes the page
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    });
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const zoomImages = document.querySelectorAll('.img-box img, .about-img img, img.projects');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.classList.remove('zoom-animate');
+        void img.offsetWidth;
+        img.classList.add('zoom-animate');
+        img.addEventListener('animationend', () => {
+          img.classList.remove('zoom-animate');
+        }, { once: true });
+      }
+    });
+  }, {
+    threshold: 0.5 
+  });
+
+  zoomImages.forEach(img => {
+    observer.observe(img);
+  });
+});
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const zoomImages = document.querySelectorAll('.article-container article img.icon');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.classList.remove('zoom-article-animate');
+        void img.offsetWidth;
+        img.classList.add('zoom-article-animate');
+        img.addEventListener('animationend', () => {
+          img.classList.remove('zoom-article-animate');
+        }, { once: true });
+      }
+    });
+  }, {
+    threshold: 0.5 
+  });
+
+  zoomImages.forEach(img => {
+    observer.observe(img);
+  });
+});
+
+
+
   document.getElementById("year").textContent = new Date().getFullYear();
