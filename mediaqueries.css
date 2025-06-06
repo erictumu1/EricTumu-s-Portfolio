@@ -471,12 +471,12 @@ body {
 @media screen and (min-width: 200px) and (max-width: 932px) {
   #hamburger-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 40px;
     gap: 100px;
     padding-right: 0px;
-    margin-right: 0px;
+    margin-right: -5px;
   }
   .menu-links a {
     display: block;
