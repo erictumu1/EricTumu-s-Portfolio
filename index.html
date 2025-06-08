@@ -14,7 +14,7 @@
     <header class="header" id="desktop-nav">
       <div class="logo-wrapper">
         <a href="#" class="logo"><span>Eric</span>Tumu</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode"></button>
       </div>
     
       <nav class="navbar">
@@ -30,7 +30,7 @@
       <nav id="hamburger-nav">
         <div class="logo-wrapper">
           <a href="#" class="logo"><span>Eric</span>Tumu</a>
-          <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+          <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle Dark Mode"></button>
         </div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="togglemenu()">
@@ -38,11 +38,11 @@
           </div>
           <div class="menu-links">
             <ul>
-              <li><a href="#home" onclick="togglemenu()">Introduction</a></li>
-              <li><a href="#about" onclick="togglemenu()">About me</a></li>
-              <li><a href="#experience" onclick="togglemenu()">Experiences</a></li>
-              <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
-              <li><a href="#contact" onclick="togglemenu()">Contact Me</a></li>
+              <li><a href="#home" class="nav-link" onclick="togglemenu()">Introduction</a></li>
+              <li><a href="#about" class="nav-link" onclick="togglemenu()">About me</a></li>
+              <li><a href="#experience" class="nav-link" onclick="togglemenu()">Experiences</a></li>
+              <li><a href="#projects" class="nav-link" onclick="togglemenu()">Projects</a></li>
+              <li><a href="#contact" class="nav-link" onclick="togglemenu()">Contact Me</a></li>
             </ul>
           </div>
         </div>
@@ -95,9 +95,7 @@
             </p>
           </div>
         </div>
-        <p class="fadein">
-         My full names are <span class="aboutinfo">Eric Tumu Muheki</span>, a graduate holding a Bachelors Degree in Computer Science from the University of Windsor. <br><br> I am enthusiastic about using my skills and knowledge in FullStack development to contribute effectively as a <span class="aboutinfo">Junior Full Stack Developer</span>. <br><br>With a strong foundation in programming languages such as Java and Python to sufficient knowledge in frameworks such as React, Django and Flutter, I am eager to collaborate on innovative projects that push boundaries and solve real world problems.<br><br>My academic background, together with my hands on experience in app and web development, has equipped me with a solid understanding of software engineering principles and a passion for continuous learning. <br><br>I am committed to delivering high quality work, as well as  efficiently working with your team to contribute positively towards your company's success.
-        </p>
+          <p id="typed-paragraph" class="fadein"></p>
         <a href="#projects" class="btn-2">My Projects</a>
       </div>
     </section>

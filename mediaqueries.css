@@ -18,6 +18,9 @@ body {
   }
 }
 @media screen and (max-width: 1200px) {
+  body.dark-mode .menu-links a {
+    background-color: #181818;
+  }
   body {
     overflow-x: hidden;
   }
@@ -236,6 +239,9 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
+  body.dark-mode .menu-links a {
+    background-color: #181818;
+  }
   .theme-toggle {
     font-size: 18px;
   }
@@ -472,6 +478,10 @@ body {
   }
 }
 @media screen and (min-width: 200px) and (max-width: 932px) {
+  body.dark-mode .menu-links a {
+    background-color: #181818;
+  }
+
   #hamburger-nav {
     display: flex;
     justify-content: space-between;

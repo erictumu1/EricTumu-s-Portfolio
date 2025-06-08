@@ -54,8 +54,20 @@ html {
   transition: 0.3s ease;
 }
 .aboutinfo {
+  color: #f5f5f5;
+  display: inline-block;
+  transition: transform 0.3s ease;
   font-weight: bold;
 }
+#typed-paragraph {
+  font-family: "Courier New", Courier, monospace;
+  color: #f5f5f5;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
 .logo:hover {
   color: #00838f;
   text-shadow: 0 0 25px #00838f, 0 0 50px #00838f;
@@ -680,6 +692,7 @@ body.dark-mode {
 
 body.dark-mode .header,
 body.dark-mode .about,
+body.dark-mode #typed-paragraph,
 body.dark-mode .projects,
 body.dark-mode .navbaritems,
 body.dark-mode footer {

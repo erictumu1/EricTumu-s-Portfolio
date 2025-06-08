@@ -202,15 +202,41 @@ window.addEventListener('load', () => {
 });
 });
 
+//Function to handle the home screen text animation
 document.addEventListener("DOMContentLoaded", function () {
   new Typed("#typed-text", {
     strings: ["FullStack Developer.", "FrontEnd Enthusiast.", "Tech Explorer."],
-    typeSpeed: 50,
+    typeSpeed: 45,
     backSpeed: 25,
     loop: true
   });
 });
 
+//Function to animate my sentence int he about section
+document.addEventListener("DOMContentLoaded", function () {
+
+  const paragraphContent = `
+  My full names are <span class="aboutinfo" data-index="0">Eric Tumu Muheki</span>, a graduate holding a Bachelors Degree in Computer Science from the University of Windsor.<br><br>
+  I enthusiastic about everything software related and would love to apply my skills and knowledge in FullStack development to contribute effectively as a <span class="aboutinfo" data-index="1">Junior Full Stack Developer</span>.<br><br>
+  With a strong foundation in programming languages such as <span class="aboutinfo" data-index="2">Java</span> and <span class="aboutinfo" data-index="3">Python</span>, to sufficient knowledge in frameworks like <span class="aboutinfo" data-index="4">React</span>, <span class="aboutinfo" data-index="5">Django</span>, and <span class="aboutinfo" data-index="6">Flutter</span>, I am eager to collaborate on innovative projects that push boundaries and solve real world problems.<br><br>
+  My academic background, together with my hands on experience in app and web development, has equipped me with a solid understanding of software engineering principles and a passion for continuous learning.<br><br>
+  I am committed to delivering high quality work, and efficiently collaborating with your team to contribute positively toward your company’s success.
+  `;
+
+  new Typed("#typed-paragraph", {
+    strings: [paragraphContent],
+    typeSpeed: 20,
+    backSpeed: 0,
+    smartBackspace: false,
+    showCursor: false,
+    cursorChar: "|",
+    loop: false,
+    html: true
+  });
+
+});
+
+//Javascript to handle light and dark mode
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
   const themeToggleDesktop = document.getElementById("theme-toggle");
@@ -218,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to set icon based on theme
   function updateIcons(isDark) {
-    const icon = isDark ? "☀️" : "🌙";
+  const icon = isDark ? "💡" : "🌕";
     if (themeToggleDesktop) themeToggleDesktop.textContent = icon;
     if (themeToggleMobile) themeToggleMobile.textContent = icon;
   }
