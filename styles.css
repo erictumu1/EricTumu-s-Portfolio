@@ -380,7 +380,9 @@ h4 {
 .details-container div {
   flex: 1;
   text-align: center;
-  background-color: black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
   padding: 2rem;
   border-radius: 2rem;
@@ -572,6 +574,9 @@ section.projects {
 #contain article:hover span {
   color: #00838f;
 }
+span.tech-title {
+  color: black;
+}
 @keyframes fadeInOne {
   from {
     opacity: 0;
@@ -646,4 +651,89 @@ section.projects {
   background-color: black;
   transition: border 0.5s ease, box-shadow 0.5s ease, color 0.5s ease,
     background-color 0.5s ease;
+}
+
+/* Below is the code for switching from light mode to dark mode */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #f5f5f5;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+body.dark-mode .home {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .header,
+body.dark-mode .about,
+body.dark-mode .projects,
+body.dark-mode .navbaritems,
+body.dark-mode footer {
+  background-color: #181818;
+}
+
+body.dark-mode .article-container article,
+body.dark-mode .details-container div {
+  background-color: #1c1c1c;
+  border-color: white;
+  color: #e0e0e0;
+}
+
+body.dark-mode .article-container #tumunch,
+body.dark-mode .article-container #time_t,
+body.dark-mode .article-container #echolyf,
+body.dark-mode .article-container #bayshore,
+body.dark-mode .article-container #inventory-app,
+body.dark-mode .article-container #flightsimulator {
+  background-color: #1c1c1c;
+  border-color: white;
+  color: #e0e0e0;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="number"],
+body.dark-mode input[type="submit"],
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #aaa;
+}
+
+body.dark-mode .article-container article h4 {
+  color: white;
+}
+
+body.dark-mode .btn-1,
+body.dark-mode .btn-2,
+body.dark-mode .btn-color {
+  background-color: #333;
+  color: #f5f5f5;
+  border: 2px solid #555;
+}
+
+body.dark-mode .btn-1:hover,
+body.dark-mode .btn-2:hover,
+body.dark-mode .btn-color:hover {
+  background-color: #00838f;
+  color: white;
 }

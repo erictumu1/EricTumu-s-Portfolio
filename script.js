@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
   document.addEventListener("DOMContentLoaded", function () {
-  const zoomImages = document.querySelectorAll('.article-container article img.icon');
+  const zoomImages = document.querySelectorAll('.img-box img .article-container article img.icon');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -169,6 +169,79 @@ document.addEventListener("DOMContentLoaded", function() {
   zoomImages.forEach(img => {
     observer.observe(img);
   });
+});
+
+window.addEventListener('load', () => {
+  gsap.from(".home-content h1", {
+    duration: 1.2,
+    y: 50,
+    opacity: 0,
+    ease: "power4.out"
+  });
+
+  gsap.from(".home-content h3", {
+    duration: 1,
+    delay: 0.2,
+    y: 30,
+    opacity: 0,
+    ease: "power2.out"
+  });
+
+  gsap.from(".btn-box", {
+    duration: 1,
+    delay: 0.4,
+    y: 50,
+    opacity: 0,
+    ease: "power2.out"
+  });
+  gsap.to(".img-box", {
+  duration: 1.2,
+  opacity: 1,
+  scale: 1,
+  ease: "power4.out"
+});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Typed("#typed-text", {
+    strings: ["FullStack Developer.", "FrontEnd Enthusiast.", "Tech Explorer."],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: true
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+  const themeToggleDesktop = document.getElementById("theme-toggle");
+  const themeToggleMobile = document.getElementById("theme-toggle-mobile");
+
+  // Function to set icon based on theme
+  function updateIcons(isDark) {
+    const icon = isDark ? "☀️" : "🌙";
+    if (themeToggleDesktop) themeToggleDesktop.textContent = icon;
+    if (themeToggleMobile) themeToggleMobile.textContent = icon;
+  }
+
+  // Set initial theme from localStorage
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    body.classList.add("dark-mode");
+    updateIcons(true);
+  } else {
+    updateIcons(false);
+  }
+
+  // Toggle theme function
+  function toggleTheme() {
+    const isDark = body.classList.toggle("dark-mode");
+    updateIcons(isDark);
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  }
+
+  // Attach click listeners if buttons exist
+  if (themeToggleDesktop) themeToggleDesktop.addEventListener("click", toggleTheme);
+  if (themeToggleMobile) themeToggleMobile.addEventListener("click", toggleTheme);
 });
 
 

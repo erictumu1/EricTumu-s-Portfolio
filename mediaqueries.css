@@ -236,6 +236,9 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
+  .theme-toggle {
+    font-size: 18px;
+  }
   body {
     overflow-x: hidden;
   }
