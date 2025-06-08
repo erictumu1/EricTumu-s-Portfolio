@@ -223,16 +223,31 @@ document.addEventListener("DOMContentLoaded", function () {
   I am committed to delivering high quality work, and efficiently collaborating with your team to contribute positively toward your company’s success.
   `;
 
-  new Typed("#typed-paragraph", {
-    strings: [paragraphContent],
-    typeSpeed: 20,
-    backSpeed: 0,
-    smartBackspace: false,
-    showCursor: false,
-    cursorChar: "|",
-    loop: false,
-    html: true
+  const aboutSection = document.getElementById("about"); // Wrap your about content in a container with this ID
+  let typedStarted = false;
+
+  // Create Intersection Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !typedStarted) {
+        typedStarted = true; // Prevent multiple initializations
+        new Typed("#typed-paragraph", {
+          strings: [paragraphContent],
+          typeSpeed: 20,
+          backSpeed: 0,
+          smartBackspace: false,
+          showCursor: false,
+          loop: false,
+          html: true
+        });
+        observer.unobserve(aboutSection); // Stop observing once started
+      }
+    });
+  }, {
+    threshold: 0.5 // trigger when 50% of About section visible
   });
+
+  observer.observe(aboutSection);
 
 });
 
