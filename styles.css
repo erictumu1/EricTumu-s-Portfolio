@@ -56,9 +56,12 @@ html {
   cursor: pointer;
 }
 
-.logo:hover {
-  transform: scale(1.15) rotate(-7deg);
+@media (min-width: 900px) {
+  .logo:hover {
+    transform: scale(1.15) rotate(-7deg);
+  }
 }
+
 .logo-shadow {
   color: #00838f !important;
   text-shadow: 0 0 25px #00838f, 0 0 50px #00838f;
