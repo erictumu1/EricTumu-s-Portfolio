@@ -51,13 +51,18 @@ html {
   font-size: 25px;
   color: #f5f5f5;
   font-weight: 600;
-  transition: 0.3s ease;
-}
-.aboutinfo {
-  color: #f5f5f5;
+  transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
   display: inline-block;
-  transition: transform 0.3s ease;
-  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.15) rotate(-7deg);
+}
+.logo-shadow {
+  color: #00838f !important;
+  text-shadow: 0 0 25px #00838f, 0 0 50px #00838f;
+  transform: scale(1.1);
 }
 #typed-paragraph {
   font-family: "Courier New", Courier, monospace;
@@ -67,11 +72,9 @@ html {
   border-radius: 8px;
   font-size: 17px;
 }
-
-.logo:hover {
-  color: #00838f;
-  text-shadow: 0 0 25px #00838f, 0 0 50px #00838f;
-  transform: scale(1.1);
+#typed-paragraph span {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
 }
 span:not(#year) {
   color: #00838f;
@@ -210,6 +213,10 @@ span:not(#year) {
   color: #999999;
   font-size: 20px;
   margin: 2em 0 3em;
+}
+.typed-wrapper {
+  min-height: 500px;
+  margin-top: 1em;
 }
 .contact-form h2 {
   text-align: center;
@@ -704,6 +711,10 @@ body.dark-mode .details-container div {
   background-color: #1c1c1c;
   border-color: white;
   color: #e0e0e0;
+}
+
+body.dark-mode #contain article:hover p.projectdesc {
+  color: #d3d3d3;
 }
 
 body.dark-mode .article-container #tumunch,

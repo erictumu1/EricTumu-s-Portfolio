@@ -212,25 +212,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Function to animate my sentence int he about section
+//Function to animate my sentence in the about section
 document.addEventListener("DOMContentLoaded", function () {
 
   const paragraphContent = `
   My full names are <span class="aboutinfo" data-index="0">Eric Tumu Muheki</span>, a graduate holding a Bachelors Degree in Computer Science from the University of Windsor.<br><br>
-  I enthusiastic about everything software related and would love to apply my skills and knowledge in FullStack development to contribute effectively as a <span class="aboutinfo" data-index="1">Junior Full Stack Developer</span>.<br><br>
+  I enthusiastic about everything software related and would love to apply my skills and knowledge in FullStack development to contribute effectively as a <span class="aboutinfo" data-index="1">Full Stack Developer</span>.<br><br>
   With a strong foundation in programming languages such as <span class="aboutinfo" data-index="2">Java</span> and <span class="aboutinfo" data-index="3">Python</span>, to sufficient knowledge in frameworks like <span class="aboutinfo" data-index="4">React</span>, <span class="aboutinfo" data-index="5">Django</span>, and <span class="aboutinfo" data-index="6">Flutter</span>, I am eager to collaborate on innovative projects that push boundaries and solve real world problems.<br><br>
   My academic background, together with my hands on experience in app and web development, has equipped me with a solid understanding of software engineering principles and a passion for continuous learning.<br><br>
   I am committed to delivering high quality work, and efficiently collaborating with your team to contribute positively toward your company’s success.
   `;
 
-  const aboutSection = document.getElementById("about"); // Wrap your about content in a container with this ID
+  const aboutSection = document.getElementById("about");
   let typedStarted = false;
 
   // Create Intersection Observer
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !typedStarted) {
-        typedStarted = true; // Prevent multiple initializations
+        typedStarted = true; // To prevent multiple initializations
         new Typed("#typed-paragraph", {
           strings: [paragraphContent],
           typeSpeed: 20,
@@ -240,11 +240,11 @@ document.addEventListener("DOMContentLoaded", function () {
           loop: false,
           html: true
         });
-        observer.unobserve(aboutSection); // Stop observing once started
+        observer.unobserve(aboutSection); // This stops observing once started
       }
     });
   }, {
-    threshold: 0.5 // trigger when 50% of About section visible
+    threshold: 0.2 // triggers the animation to start when 20% of About section visible
   });
 
   observer.observe(aboutSection);
@@ -254,37 +254,37 @@ document.addEventListener("DOMContentLoaded", function () {
 //Javascript to handle light and dark mode
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
-  const themeToggleDesktop = document.getElementById("theme-toggle");
-  const themeToggleMobile = document.getElementById("theme-toggle-mobile");
+  const logoElements = document.querySelectorAll(".logo");
 
-  // Function to set icon based on theme
-  function updateIcons(isDark) {
-  const icon = isDark ? "💡" : "🌕";
-    if (themeToggleDesktop) themeToggleDesktop.textContent = icon;
-    if (themeToggleMobile) themeToggleMobile.textContent = icon;
-  }
-
-  // Set initial theme from localStorage
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    body.classList.add("dark-mode");
-    updateIcons(true);
-  } else {
-    updateIcons(false);
-  }
-
-  // Toggle theme function
-  function toggleTheme() {
-    const isDark = body.classList.toggle("dark-mode");
-    updateIcons(isDark);
+  // Function to apply theme
+  function applyTheme(isDark) {
+    body.classList.toggle("dark-mode", isDark);
+    logoElements.forEach((logo) => {
+      if (isDark) {
+        logo.classList.add("logo-shadow");
+      } else {
+        logo.classList.remove("logo-shadow");
+      }
+    });
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }
 
-  // Attach click listeners if buttons exist
-  if (themeToggleDesktop) themeToggleDesktop.addEventListener("click", toggleTheme);
-  if (themeToggleMobile) themeToggleMobile.addEventListener("click", toggleTheme);
+  // Set initial theme: saved or system preference
+  const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const initialDark = savedTheme === "dark" || (!savedTheme && prefersDark);
+  applyTheme(initialDark);
+
+  // Toggle theme function
+  function toggleTheme() {
+    const isDark = !body.classList.contains("dark-mode");
+    applyTheme(isDark);
+  }
+
+  // Click event on logo to toggle
+  logoElements.forEach((logo) => {
+    logo.addEventListener("click", toggleTheme);
+  });
 });
-
-
 
   document.getElementById("year").textContent = new Date().getFullYear();
