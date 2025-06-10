@@ -764,3 +764,10 @@ body.dark-mode .btn-color:hover {
   background-color: #00838f;
   color: white;
 }
+.experience-details-container,
+.about-containers,
+.details-containers {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
