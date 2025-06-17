@@ -726,7 +726,8 @@ body.dark-mode .article-container #echolyf,
 body.dark-mode .article-container #bayshore,
 body.dark-mode .article-container #inventory-app,
 body.dark-mode.article-container #flightsimulator,
-body.dark-mode .article-container #coach_career {
+body.dark-mode .article-container #coach_career,
+body.dark-mode .article-container #flightsimulator {
   background-color: #1c1c1c;
   border-color: white;
   color: #e0e0e0;
