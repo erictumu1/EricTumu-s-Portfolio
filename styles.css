@@ -573,13 +573,11 @@ section.projects {
   color: #00838f;
   font-weight: bold;
   text-align: left;
-  text-decoration: underline;
 }
 #contain article:hover p.projectdesc {
   color: black;
 }
 #contain article:hover p.complete {
-  color: green;
   text-decoration: none;
 }
 #contain article:hover p.in-progress {
