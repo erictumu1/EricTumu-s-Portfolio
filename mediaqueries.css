@@ -532,6 +532,10 @@ body {
     color: #00838f;
     transform: scale(1.05);
   }
+  .text-container {
+    min-height: 250px;
+    margin-bottom: -30px;
+  }
 }
 @media screen and (min-width: 200px) and (max-width: 699px) {
   body.dark-mode .menu-links a {
