@@ -353,6 +353,9 @@ span:not(#year) {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
+.text-container {
+  min-height: 345px;
+}
 .menu-links a {
   display: block;
   padding: 10px;
