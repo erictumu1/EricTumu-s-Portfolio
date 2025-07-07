@@ -833,6 +833,10 @@ body.dark-mode footer {
   background-color: #181818;
 }
 
+body.dark-mode .img-box .video-wrapper {
+  box-shadow: 0 0 40px 15px rgba(255, 244, 229, 0.7);
+}
+
 body.dark-mode .demo-container button {
   background-color: #181818;
   color: #00838f;
