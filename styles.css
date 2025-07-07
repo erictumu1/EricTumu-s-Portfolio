@@ -177,6 +177,9 @@ span:not(#year) {
   border-radius: 50%;
   width: 450px;
 }  This is for the image*/
+.hidden-img {
+  display: none;
+}
 .img-box .video-wrapper {
   width: 450px;
   height: 550px;
@@ -200,7 +203,6 @@ span:not(#year) {
   transform: translateZ(60px) scale(1.5);
   transition: transform 0.6s ease;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #00838f;
 }
