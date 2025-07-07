@@ -371,10 +371,16 @@ body {
     transition: 0.3s ease;
     cursor: pointer;
   }
-  .img-box img {
+  /* .img-box img {
     border-radius: 50%;
     width: 250px;
     margin-left: 20px;
+  } This is for the image */
+  .img-box .video-wrapper {
+    border-radius: 50%;
+    width: 350px;
+    height: 420px;
+    margin-left: -15px;
   }
   .about {
     display: block;
