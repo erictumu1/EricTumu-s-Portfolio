@@ -269,7 +269,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }
-
   // Set initial theme: saved or system preference
   const savedTheme = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
