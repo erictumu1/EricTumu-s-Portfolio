@@ -545,6 +545,11 @@ section.experience {
   width: 150px;
   height: auto;
 }
+.article-container article video.projects {
+  width: 150px;
+  height: 150px;
+  background-color: #fde047;
+}
 .article-container article h4 {
   font-size: 18px;
   color: black;
