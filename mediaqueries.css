@@ -494,6 +494,12 @@ body {
   .about-content {
     margin-top: 0px;
   }
+  .article-container article video.projects {
+    display: none;
+  }
+  .article-container article .popfruity-img {
+    display: block;
+  }
   .article-container article {
     border: 1.5px solid black;
     border-radius: 20px;

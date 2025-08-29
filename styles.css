@@ -550,6 +550,16 @@ section.experience {
   height: 150px;
   background-color: #fde047;
 }
+.article-container article .popfruity-img {
+  width: 150px;
+  height: 150px;
+  background-color: #fde047;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-self: center;
+  display: none;
+}
 .article-container article h4 {
   font-size: 18px;
   color: black;
