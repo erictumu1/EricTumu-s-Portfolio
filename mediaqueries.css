@@ -498,11 +498,13 @@ body {
     display: none;
   }
   .article-container article .popfruity-img {
-    display: block;
-    justify-self: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
+  }
+
+  .article-container article .popfruity-img img {
+    height: auto;
   }
   .article-container article {
     border: 1.5px solid black;
