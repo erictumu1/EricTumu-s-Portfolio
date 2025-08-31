@@ -497,14 +497,16 @@ body {
   .article-container article video.projects {
     display: none;
   }
-  .article-container article .popfruity-img {
+  .article-container article img.pop-fruity {
+    width: 150px;
+    height: 150px;
+    background-color: #fde047;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .article-container article .popfruity-img img {
-    height: auto;
+    object-fit: contain;
+    padding: 10px;
+    margin: 0 auto;
   }
   .article-container article {
     border: 1.5px solid black;

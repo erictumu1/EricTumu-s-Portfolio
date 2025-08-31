@@ -551,15 +551,7 @@ section.experience {
   background-color: #fde047;
 }
 .article-container article img.pop-fruity {
-  width: 150px;
-  height: 150px;
-  background-color: #fde047;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: contain;
-  padding: 10px;
-  margin: 0 auto;
+  display: none;
 }
 
 .article-container article h4 {
