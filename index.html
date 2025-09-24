@@ -747,11 +747,13 @@
             type="text"
             name="full_name"
             placeholder="Enter your full names here"
+            required
           />
           <input
             type="email"
             name="email"
             placeholder="Enter your email here"
+            required
           />
         </div>
         <div class="input-box fadein">
@@ -759,8 +761,9 @@
             type="number"
             name="phone_number"
             placeholder="Enter your phone number here"
+            required
           />
-          <input type="text" name="subject" placeholder="subject" />
+          <input type="text" name="subject" placeholder="subject" required />
         </div>
         <input
           type="hidden"
@@ -773,6 +776,7 @@
           rows="10"
           placeholder="Your Message"
           class="fadein"
+          required
         ></textarea>
         <input type="submit" value="Send Message" class="btn-1 fadein" />
       </form>
