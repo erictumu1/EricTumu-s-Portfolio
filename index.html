@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
   </head>
   <body>
     <header class="header" id="desktop-nav">
@@ -25,44 +27,29 @@
 
       <a href="#contact" class="contact">Contact Me</a>
     </header>
+
     <section class="navbaritems">
       <nav id="hamburger-nav">
-        <div class="logo-wrapper">
-          <a class="logo"><span>Eric</span>Tumu</a>
-        </div>
-        <div class="hamburger-menu">
+        <div class="navbaritems">
+          <div class="logo-wrapper">
+            <a class="logo"><span>Eric</span>Tumu</a>
+          </div>
+
           <div class="hamburger-icon" onclick="togglemenu()">
-            <span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="menu-links">
-            <ul>
-              <li>
-                <a href="#home" class="nav-link" onclick="togglemenu()"
-                  >Introduction</a
-                >
-              </li>
-              <li>
-                <a href="#about" class="nav-link" onclick="togglemenu()"
-                  >About me</a
-                >
-              </li>
-              <li>
-                <a href="#experience" class="nav-link" onclick="togglemenu()"
-                  >Experiences</a
-                >
-              </li>
-              <li>
-                <a href="#projects" class="nav-link" onclick="togglemenu()"
-                  >Projects</a
-                >
-              </li>
-              <li>
-                <a href="#contact" class="nav-link" onclick="togglemenu()"
-                  >Contact Me</a
-                >
-              </li>
-            </ul>
-          </div>
+        </div>
+
+        <div class="menu-links">
+          <ul class="menu-main">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
         </div>
       </nav>
     </section>

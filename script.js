@@ -1,9 +1,37 @@
+// ========== Mobile Menu ==========
 function togglemenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
+
+  if (menu.classList.contains("show")) {
+    menu.classList.remove("show");
+    menu.classList.add("closing");
+
+    setTimeout(() => {
+      menu.classList.remove("closing");
+    }, 400);
+  } else {
+    menu.classList.add("show");
+  }
+
   icon.classList.toggle("open");
 }
+window.togglemenu = togglemenu;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuLinks = document.querySelectorAll(".menu-links a");
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("show");
+      menu.classList.remove("closing");
+      icon.classList.remove("open");
+    });
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const menuItems = document.querySelectorAll(".navbar a");
   const sections = document.querySelectorAll("section");
