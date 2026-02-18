@@ -45,7 +45,10 @@ html {
   font-size: 25px;
   color: #f5f5f5;
   font-weight: 600;
-  transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
+  transition:
+    color 0.4s ease,
+    text-shadow 0.4s ease,
+    transform 0.4s ease;
   display: inline-block;
   cursor: pointer;
 }
@@ -58,7 +61,9 @@ html {
 
 .logo-shadow {
   color: #00838f !important;
-  text-shadow: 0 0 25px #00838f, 0 0 50px #00838f;
+  text-shadow:
+    0 0 25px #00838f,
+    0 0 50px #00838f;
   transform: scale(1.1);
 }
 #typed-paragraph {
@@ -87,7 +92,10 @@ span:not(#year) {
 .navbar a:hover {
   color: #00838f;
   transform: scale(1.05);
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 .contact {
   padding: 10px 28px;
@@ -147,7 +155,10 @@ span:not(#year) {
   color: black;
   border: 2px solid black;
   transform: scale(1.05);
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 .btn-2 {
   padding: 15px 28px;
@@ -165,7 +176,10 @@ span:not(#year) {
   background-color: white;
   color: #00838f;
   transform: scale(1.05);
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 /* .img-box img {
   border-radius: 50%;
@@ -186,7 +200,9 @@ span:not(#year) {
   animation: pop3D 1s ease-out forwards;
   transform-origin: center;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
-  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.3s ease;
 }
 
 .img-box .video-wrapper video {
@@ -215,7 +231,9 @@ span:not(#year) {
 .about-img img {
   position: relative;
   width: 450px;
-  box-shadow: 0 0 25px #00838f, 0 0 25px #00838f;
+  box-shadow:
+    0 0 25px #00838f,
+    0 0 25px #00838f;
   border-radius: 50%;
 }
 .about-content {
@@ -276,7 +294,9 @@ span:not(#year) {
 .about-img img {
   border-radius: 50%;
   width: 450px;
-  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out,
+  transition:
+    transform 0.4s ease-in-out,
+    filter 0.4s ease-in-out,
     box-shadow 0.4s ease-in-out;
 }
 .zoom-animate {
@@ -308,7 +328,9 @@ span:not(#year) {
   text-align: center;
   border-radius: 50%;
   margin: 0 8px;
-  box-shadow: inset 0 0 10px #00838f, 0 0 10px #00838f;
+  box-shadow:
+    inset 0 0 10px #00838f,
+    0 0 10px #00838f;
   transition: 0.3s ease;
 }
 .footer .social a:hover {
@@ -371,7 +393,9 @@ span:not(#year) {
   opacity: 0;
   pointer-events: none;
 
-  transition: transform 0.4s ease, opacity 0.3s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.3s ease;
 
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -515,7 +539,10 @@ h4 {
   transform: scale(1.05);
   border-color: #00838f;
   color: #00838f;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .details-container div:hover a,
@@ -547,7 +574,10 @@ section.experience {
   border: 1.5px solid black;
   border-radius: 20px;
   padding: 20px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
   background-color: white;
   text-align: center;
 }
@@ -555,7 +585,10 @@ section.experience {
   border: 1.5px solid black;
   border-radius: 20px;
   padding: 20px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
   background-color: #00838f;
   text-align: center;
 }
@@ -638,7 +671,10 @@ section.projects {
   background-color: #00838f;
   color: white;
   transform: scale(1.05);
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 .progress {
   font-size: 40px;
@@ -756,12 +792,16 @@ span.tech-title {
   50% {
     transform: scale(1.1);
     filter: brightness(1.1);
-    box-shadow: 0 0 30px rgba(0, 131, 143, 0.6), 0 0 40px rgba(0, 131, 143, 0.4);
+    box-shadow:
+      0 0 30px rgba(0, 131, 143, 0.6),
+      0 0 40px rgba(0, 131, 143, 0.4);
   }
   100% {
     transform: scale(1);
     filter: brightness(1);
-    box-shadow: 0 0 30px rgba(0, 131, 143, 0.6), 0 0 40px rgba(0, 131, 143, 0.4);
+    box-shadow:
+      0 0 30px rgba(0, 131, 143, 0.6),
+      0 0 40px rgba(0, 131, 143, 0.4);
   }
 }
 @keyframes initialZoom {
@@ -773,12 +813,16 @@ span.tech-title {
   50% {
     transform: scale(1.1);
     filter: brightness(1.1);
-    box-shadow: 0 0 30px rgba(0, 131, 143, 0.6), 0 0 40px rgba(0, 131, 143, 0.4);
+    box-shadow:
+      0 0 30px rgba(0, 131, 143, 0.6),
+      0 0 40px rgba(0, 131, 143, 0.4);
   }
   100% {
     transform: scale(1);
     filter: brightness(1);
-    box-shadow: 0 0 30px rgba(0, 131, 143, 0.6), 0 0 40px rgba(0, 131, 143, 0.4);
+    box-shadow:
+      0 0 30px rgba(0, 131, 143, 0.6),
+      0 0 40px rgba(0, 131, 143, 0.4);
   }
 }
 @keyframes articleinitialZoom {
@@ -790,12 +834,16 @@ span.tech-title {
   50% {
     transform: scale(1.1);
     filter: brightness(1.1);
-    box-shadow: 0 0 30px white, 0 0 40px white;
+    box-shadow:
+      0 0 30px white,
+      0 0 40px white;
   }
   100% {
     transform: scale(1);
     filter: brightness(1);
-    box-shadow: 0 0 30px white, 0 0 40px white;
+    box-shadow:
+      0 0 30px white,
+      0 0 40px white;
   }
 }
 .fadein {
@@ -810,7 +858,10 @@ span.tech-title {
   box-shadow: 0 0 3000px white;
   color: white;
   background-color: black;
-  transition: border 0.5s ease, box-shadow 0.5s ease, color 0.5s ease,
+  transition:
+    border 0.5s ease,
+    box-shadow 0.5s ease,
+    color 0.5s ease,
     background-color 0.5s ease;
 }
 
@@ -923,6 +974,7 @@ body.dark-mode .article-container #bayshore,
 body.dark-mode .article-container #inventory-app,
 body.dark-mode.article-container #flightsimulator,
 body.dark-mode .article-container #coach_career,
+body.dark-mode .article-container #pop_fruity,
 body.dark-mode .article-container #flightsimulator {
   background-color: #1c1c1c;
   border-color: white;
